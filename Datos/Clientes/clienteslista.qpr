@@ -1,0 +1,7 @@
+
+SELECT Clientes.idcliente, Clientes.nombre;
+ FROM ;
+     Datos\Administra!CLIENTES;
+ WHERE  Clientes.idcliente = ( pIdCliente);
+ ORDER BY Clientes.nombre;
+ INTO CURSOR cuClientesLista  

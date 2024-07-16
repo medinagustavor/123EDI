@@ -1,0 +1,5 @@
+
+SELECT Proveedores.razonsocial, Proveedores.idproveedor;
+ FROM ;
+     ADMINISTRA!PROVEEDORES;
+ ORDER BY Proveedores.razonsocial

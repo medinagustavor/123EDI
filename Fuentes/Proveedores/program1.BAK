@@ -1,0 +1,261 @@
+**************************************************
+*-- Class:        marcas (c:\desarrollos\administra\proveedores\proveedores.vcx)
+*-- ParentClass:  container
+*-- BaseClass:    container
+*-- Time Stamp:   12/07/14 12:36:01 AM
+*-- Marcas Provistas por Proveedor.
+*
+create CLASS marcas2 AS container OF proveedores.vcx
+
+
+  Width = 1285
+  Height = 547
+  BorderWidth = 0
+  Name = "marcas"
+
+
+*    ADD OBJECT grdproveedores AS grilla WITH ;
+*      ColumnCount = 2, ;
+*      DeleteMark = .F., ;
+*      Height = 384, ;
+*      Left = 36, ;
+*      Panel = 1, ;
+*      RecordSource = "proveedores", ;
+*      ScrollBars = 2, ;
+*      Top = 60, ;
+*      Width = 320, ;
+*      Name = "grdProveedores", ;
+*      Columna1.ControlSource = "razonsocial", ;
+*      Columna1.Width = 289, ;
+*      Columna1.Name = "Columna2", ;
+*      Columna2.ControlSource = "idproveedor", ;
+*      Columna2.Visible = .F., ;
+*      Columna2.Name = "Columna1"
+
+
+*    ADD OBJECT marcas.grdproveedores.columna2.encabezado1 AS encabezado WITH ;
+*      Caption = "Proveedor", ;
+*      Name = "Encabezado1"
+
+
+*    ADD OBJECT marcas.grdproveedores.columna2.text1 AS textbox WITH ;
+*      BorderStyle = 0, ;
+*      Margin = 0, ;
+*      ForeColor = RGB(0,0,0), ;
+*      BackColor = RGB(255,255,255), ;
+*      Name = "Text1"
+
+
+*    ADD OBJECT marcas.grdproveedores.columna1.encabezado1 AS encabezado WITH ;
+*      Name = "Encabezado1"
+
+
+*    ADD OBJECT marcas.grdproveedores.columna1.text1 AS textbox WITH ;
+*      BorderStyle = 0, ;
+*      Margin = 0, ;
+*      Visible = .F., ;
+*      ForeColor = RGB(0,0,0), ;
+*      BackColor = RGB(255,255,255), ;
+*      Name = "Text1"
+
+
+*    ADD OBJECT grdprovmarca AS grilla WITH ;
+*      ColumnCount = 2, ;
+*      DeleteMark = .F., ;
+*      Height = 385, ;
+*      Left = 384, ;
+*      Panel = 1, ;
+*      RecordSource = "MarcasProvistas", ;
+*      ScrollBars = 2, ;
+*      Top = 60, ;
+*      Width = 272, ;
+*      Name = "grdProvMarca", ;
+*      Columna1.ControlSource = "IdMarca", ;
+*      Columna1.Visible = .F., ;
+*      Columna1.Name = "Columna2", ;
+*      Columna2.ControlSource = "IdProveedor", ;
+*      Columna2.Width = 241, ;
+*      Columna2.Visible = .T., ;
+*      Columna2.Name = "Columna3"
+
+
+*    ADD OBJECT marcas.grdprovmarca.columna2.encabezado1 AS encabezado WITH ;
+*      Name = "Encabezado1"
+
+
+*    ADD OBJECT marcas.grdprovmarca.columna2.text1 AS textbox WITH ;
+*      BorderStyle = 0, ;
+*      Margin = 0, ;
+*      Visible = .F., ;
+*      ForeColor = RGB(0,0,0), ;
+*      BackColor = RGB(255,255,255), ;
+*      Name = "Text1"
+
+
+*    ADD OBJECT marcas.grdprovmarca.columna3.encabezado1 AS encabezado WITH ;
+*      Caption = "Marcas Provistas", ;
+*      Name = "ENCABEZADO1"
+
+
+*    ADD OBJECT marcas.grdprovmarca.columna3.text1 AS textbox WITH ;
+*      BorderStyle = 0, ;
+*      Margin = 0, ;
+*      Visible = .T., ;
+*      ForeColor = RGB(0,0,0), ;
+*      BackColor = RGB(255,255,255), ;
+*      Name = "Text1"
+
+
+*    ADD OBJECT grdmarcasdisponibles AS grilla WITH ;
+*      ColumnCount = 2, ;
+*      DeleteMark = .F., ;
+*      Height = 385, ;
+*      Left = 744, ;
+*      Panel = 1, ;
+*      RecordSource = "MarcasNoProvistas", ;
+*      ScrollBars = 2, ;
+*      Top = 60, ;
+*      Width = 275, ;
+*      Name = "grdMarcasDisponibles", ;
+*      Columna1.ControlSource = "IdMarca", ;
+*      Columna1.Visible = .F., ;
+*      Columna1.Name = "Columna2", ;
+*      Columna2.ControlSource = "Nombre", ;
+*      Columna2.Width = 244, ;
+*      Columna2.Name = "Columna1"
+
+
+*    ADD OBJECT marcas.grdmarcasdisponibles.columna2.encabezado1 AS encabezado WITH ;
+*      Name = "Encabezado1"
+
+
+*    ADD OBJECT marcas.grdmarcasdisponibles.columna2.text1 AS textbox WITH ;
+*      BorderStyle = 0, ;
+*      Margin = 0, ;
+*      Visible = .F., ;
+*      ForeColor = RGB(0,0,0), ;
+*      BackColor = RGB(255,255,255), ;
+*      Name = "Text1"
+
+
+*    ADD OBJECT marcas.grdmarcasdisponibles.columna1.encabezado1 AS encabezado WITH ;
+*      Caption = "Marcas No Provistas", ;
+*      Name = "Encabezado1"
+
+
+*    ADD OBJECT marcas.grdmarcasdisponibles.columna1.text1 AS textbox WITH ;
+*      BorderStyle = 0, ;
+*      Margin = 0, ;
+*      ForeColor = RGB(0,0,0), ;
+*      BackColor = RGB(255,255,255), ;
+*      Name = "Text1"
+
+
+*    ADD OBJECT cbagregar AS boton WITH ;
+*      Top = 134, ;
+*      Left = 670, ;
+*      Height = 34, ;
+*      Width = 53, ;
+*      FontBold = .T., ;
+*      FontSize = 11, ;
+*      Caption = "< <", ;
+*      Name = "cbAgregar"
+
+
+*    ADD OBJECT cbquitar AS boton WITH ;
+*      Top = 203, ;
+*      Left = 670, ;
+*      Height = 34, ;
+*      Width = 53, ;
+*      FontBold = .T., ;
+*      FontOutline = .F., ;
+*      FontSize = 11, ;
+*      FontStrikethru = .F., ;
+*      FontCondense = .F., ;
+*      Caption = "> >", ;
+*      Name = "cbQuitar"
+
+
+*    PROCEDURE Destroy
+*      THISFORM.IdProveedor=.NULL.
+*    ENDPROC
+
+
+*    PROCEDURE Init
+*      SELECT Proveedores
+*      GO TOP
+*      THIS.GrdProvMarca.RecordSource=''
+*      THISFORM.DataEnvironment.MarcasProvistas.CursorFill(.T.,.F.)
+*      THIS.GrdProvMarca.RecordSource='MarcasProvistas'
+*      THIS.GrdMarcasDisponibles.RecordSource=''
+*      THISFORM.DataEnvironment.MarcasNoProvistas.CursorFill(.T.,.F.)
+*      THIS.GrdMarcasDisponibles.RecordSource='MarcasNoProvistas'
+*    ENDPROC
+
+
+*    PROCEDURE grdproveedores.AfterRowColChange
+*      LPARAMETERS nColIndex
+
+*      *------------------------------------------------------------------------------*
+*      * Esta variable es la que se usa como parámetro en los CursorAdapter           *
+*      *------------------------------------------------------------------------------*
+*      THISFORM.IdProveedor=IdProveedor
+
+*      THISFORM.DataEnvironment.MarcasProvistas.CursorRefresh()
+*      THISFORM.DataEnvironment.MarcasNoProvistas.CursorRefresh()
+*    ENDPROC
+
+
+*    PROCEDURE cbagregar.Click
+*      SELECT MarcasProvistas
+*      *------------------------------------------------------------------------------*
+*      * Este APPEND se aplica al cursor, no a la tabla.                              *
+*      *------------------------------------------------------------------------------*
+*      APPEND BLANK
+
+*      WITH THIS.Parent.GrdProvMarca
+*        .Columna1.text1.Value =MarcasNoProvistas.Nombre
+*        .Columna2.text1.Value=MarcasNoProvistas.IdMarca
+*        .Columna3.text1.Value=THISFORM.IdProveedor
+*        *----------------------------------------------------------------------------*
+*        * Se refresca el grid para que mestre los valores recién asignados.          *
+*        *----------------------------------------------------------------------------*
+*        .Refresh
+*      ENDWITH
+*      *------------------------------------------------------------------------------*
+*      * Se aplica el DELETE a la tabla.                                              *
+*      *------------------------------------------------------------------------------*
+*      TABLEUPDATE()
+*      *------------------------------------------------------------------------------*
+*      * Actualiza el cursor de las No Provistas porque la consulta depende de las    *
+*      *Provistas                                                                     *
+*      *------------------------------------------------------------------------------*
+*      THISFORM.DataEnvironment.MarcasNoProvistas.CursorRefresh()
+*    ENDPROC
+
+
+*    PROCEDURE cbquitar.Click
+*      SELECT MarcasProvistas
+*      *------------------------------------------------------------------------------*
+*      * Este DELETE se aplica al cursor, no a la tabla.                              *
+*      *------------------------------------------------------------------------------*
+*      DELETE
+*      *------------------------------------------------------------------------------*
+*      * Se aplica el DELETE a la tabla.                                              *
+*      *------------------------------------------------------------------------------*
+*      TABLEUPDATE()
+*      *------------------------------------------------------------------------------*
+*      * Se refresca el grid para que muestre la eliminación del registro del cursor. *
+*      *------------------------------------------------------------------------------*
+*      THIS.Parent.GrdProvMarca.Refresh()
+*      *------------------------------------------------------------------------------*
+*      * Actualiza el cursor de las No Provistas porque la consulta depende de las    *
+*      *Provistas                                                                     *
+*      *------------------------------------------------------------------------------*
+*      THISFORM.DataEnvironment.MarcasNoProvistas.CursorRefresh()
+*    ENDPROC
+
+
+*
+*-- EndDefine: marcas
+**************************************************

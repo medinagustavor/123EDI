@@ -1,0 +1,11 @@
+* Trae las Marcas provistas por un Proveedor.
+* Parámetros:
+*     -  pIdProveedor: identificador del Proveedor del que se quiere traer las Marcas provistas.
+* Quién lo usa tiene que crear una propiedad o una variable llamada pIdProveedor antes que se ejecute esta Consulta para que tenga de dónde tomar el valor.
+SELECT Marcas.nombre, Marcas.idmarca;
+ FROM ;
+     datos\administra!marcas ;
+    INNER JOIN datos\administra!provsmarcas ;
+   ON  Marcas.idmarca = Provsmarcas.idmarca;
+ WHERE  Provsmarcas.idproveedor = ( pIdProveedor );
+ INTO CURSOR MarcasPorProv  
